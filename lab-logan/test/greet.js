@@ -1,7 +1,6 @@
 'use strict';
 
-module.exports = {};
-
 module.exports = function greet(name){
-  return 'Hi there ' + name;
+  if (!name) throw new Error('expected a name');
+  return 'hello ' + name;
 };
